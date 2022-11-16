@@ -34,7 +34,7 @@ const Navbar = () => {
                     </Link>
                     
                     <Link href="/">
-                        <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
+                        <li className="ml-10 text-sm uppercase hover:border-b">CV</li>
                     </Link>
 
                     <Link href="/">
@@ -82,31 +82,55 @@ const Navbar = () => {
                             </Link>
 
                             <Link href="/">
-                            <li onClick={() => setNav(false)} className="py-4 text-sm">Projects</li>
+                            <li onClick={() => setNav(false)} className="py-4 text-sm">CV</li>
                             </Link>
 
                             <Link href="/">
                             <li onClick={() => setNav(false)} className="py-4 text-sm">Contact</li>
                             </Link>
                         </ul>
-                        <div className="pt-5">
+                        <div className="pt-40">
                             <p className="uppercase tracking-widest text-[#5681a6]">Get In Touch</p>
                             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <a href=
+                                'https://www.linkedin.com/in/xassha-david-59b393187/'
+                                target='_blank'
+                                rel='noreferrer'
+                                >
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-115 ease-in duration-300">
                                     <FaLinkedinIn />
                                 </div>
+                                </a>
 
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <a href=
+                                'https://github.com/xasshad'
+                                target='_blank'
+                                rel='noreferrer'
+                                >
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-115 ease-in duration-300">
                                     <FaGithub />
                                 </div>
+                                </a>
 
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <a href=
+                                '/contact'
+                                target='_blank'
+                                rel='noreferrer'
+                                >
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-115 ease-in duration-300">
                                     <AiOutlineMail />
                                 </div>
+                                </a>
 
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <a href=
+                                '/cv'
+                                target='_blank'
+                                rel='noreferrer'
+                                >
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-115 ease-in duration-300">
                                     <BsFillPersonLinesFill />
                                 </div>
+                                </a>
                             </div>
                         </div>
                     </div>
